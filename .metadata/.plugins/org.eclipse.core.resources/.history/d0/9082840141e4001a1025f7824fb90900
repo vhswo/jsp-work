@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file= "layout/header.jsp" %>
+
+<!-- 로그인만 예외로 POST로 찾기를 함 위험하기 때문,보안상  -->
+<form action = "loginProc.jsp" method = "POST">
+	<input type="text" name = "username" placeholder= "Username"/> <br/>
+	<input type="password" name ="password"  placeholder ="Password" /> <br/>
+	<button>로그인</button>
+	</form>
+	
+<%@ include file= "layout/puter.jsp" %>
+
+
+
+
+

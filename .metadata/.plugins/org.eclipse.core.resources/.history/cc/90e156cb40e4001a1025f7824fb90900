@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<style>
+	ul {
+		text-align: center;
+	}
+	
+	li {
+		display: inline-block;
+		width : 100px;
+	}
+</style>
+</head>
+<body>
+<h1>회원가입 페이지</h1>
+<hr/>
+<ul>
+	<!--하이퍼링크 http 걸때/ 지만 바로 앞에꺼 걸때는 간단하게 적는 방법  -->
+	<li><a href="main.jsp">메인</a></li>
+	<li><a href="login.jsp">로그인</a></li>
+	<li><a href ="join.jsp">회원가입</a></li>
+</ul>
+<hr/>
+<!--  form 태그는 데이터를 전송하기 위한 박스-->
+<!--  action 이동하여 찾아주는 코드-->
+<!--  get 읽은것,정보찾기(변경불가)  , Post 쓰는것 (변경가능),delete 삭제, put 수정 -->
+<form action="joinProc.jsp" method="post">
+	<input type="text" name ="username" placeholder = "Username"/> <br/>
+	<input type="password" name ="password" placeholder = "Password"/> <br/>
+	<input type="email" name ="email" placeholder = "Email"/> <br/>
+	<button>전송</button>
+</form>
+
+</body>
+</html>
+
+
+
+
+
