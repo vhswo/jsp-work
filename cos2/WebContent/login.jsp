@@ -1,0 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file= "layout/header.jsp" %>
+
+<h1>로그인</h1>
+
+<form action = "loginProc.jsp" method = "POST">
+	<input type="text" name = "username" placeholder= "Username"/> <br/>
+	<input type="password" name ="password"  placeholder ="Password" /> <br/>
+	<button>로그인</button>
+	</form>
+
+<%@ include file= "layout/footer.jsp" %>
