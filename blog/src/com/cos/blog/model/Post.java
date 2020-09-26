@@ -21,6 +21,14 @@ public class Post {
 		this.userId = userId;
 	}
 
+	public Post(String title, String content, int readCount,  int userId) {
+		super();
+		this.title = title;
+		this.content = content;
+		this.readCount = readCount;
+		this.userId = userId;
+	}
+
 	public int getId() {
 		return id;
 	}

@@ -52,4 +52,23 @@ public class UserDao {
 		}
 		return -1;
 	}
+	
+	public int 회원수정(User user) {
+		String sql = "UPDATE user SET username=?, password = ?, email = ?, address =?, createDate = now() where id =?";
+		Connection conn = DBConn.getInstance();
+		try {
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, user.getUsername());
+		pstmt.setString(2, user.getPassword());
+		pstmt.setString(3, user.getEmail());
+		pstmt.setString(4, user.getAddress());
+		pstmt.setInt(5, user.getId());
+		
+		return pstmt.executeUpdate();
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return -1;
+	}
+	
 }
